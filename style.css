@@ -1,40 +1,41 @@
+/**
+*
+*   Page 404 not found
+*   Challenge on https://devchallenges.io/challenges/wBunSb7FPrIepJZAg0sY
+*/
+:root {
+    --footer-height: 50px;
+}
+
+/* MOBILE FIRST */
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 header {
     font-family: 'Inconsolata', monospace;
+    padding-left: 25px;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
-    margin-left: 25px;
 }
-
 main {
     font-family: 'Space Mono', monospace;
-    display: flex;
-    justify-content: space-between;
-    max-width: 80%;
-    margin-left: auto;
-    margin: 0 auto;
-    max-height: 500px;
-    padding-bottom: 50px;
+    padding: 25px;
 }
-.right-container {
-    width: 40%;
+img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
 }
 .right-container h1 {
     font-weight: 700;
-    font-size: 64px;
+    font-size: 48px;
 }
 .right-container p {
     color: #4F4F4F;
-    font-size: 24px;
+    font-size: 18px;
 }
 .right-container a {
     display: inline-block;
@@ -43,20 +44,61 @@ main {
     background-color: #000;
     text-transform: uppercase;
     color: #fff;
+    font-size: 14px;
     font-weight: 700;
-    line-height: 20.73px;
-
+    line-height: 21px;
+    margin-top: 35px;
 }
-img {
-    height: 448px;
-    width: 540px;
-}
-
 footer {
-    margin-top: 20px;
-    height: 70px;
+    margin-top: 50px;
+    /* height: 20px; */
     font-size: 14px;
     text-align: center;
-    font-family: 'Montserrat', sans-serif;
     width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* MIN-WIDTH : 960PX */
+@Media only screen and (min-width: 960px) {
+    body {
+        min-height: 100vh;
+        padding: 0;
+        margin: 0;
+        position: relative;
+    }
+    header {
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+    header p {
+        margin: 0;
+    }
+    main {
+        display: flex;
+        justify-content: space-between;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .right-container {
+        width: 40%;
+    }
+    .right-container h1 {
+        font-size: 64px;
+    }
+    .right-container p {
+        font-size: 24px;
+    }
+    img {
+        height: 448px;
+        width: 540px;
+    }
+    footer {
+        margin: 0;
+        height: var(--footer-height);
+        position: absolute;
+        bottom: 0;
+    }
+    footer p {
+        padding: 0;
+    }
 }
