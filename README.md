@@ -28,7 +28,8 @@
 
 ## Overview
 
-![screenshot-desktop](https://user-images.githubusercontent.com/64157792/96262929-b209f080-0fc2-11eb-837d-e4f98771e238.png)
+![maquette](https://user-images.githubusercontent.com/64157792/96263506-5ee46d80-0fc3-11eb-92f0-3cba7452b6c7.png)
+
 
 
 ### Built With
