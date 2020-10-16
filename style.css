@@ -87,7 +87,7 @@ footer {
         display: flex;
         justify-content: space-between;
         max-width: 80%;
-        margin: 0 auto;
+        margin: 125px auto 0 auto;
     }
     .right-container {
         width: 40%;
