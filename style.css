@@ -35,6 +35,9 @@ img {
     display: block;
     margin: 0 auto;
 }
+.right-container {
+    margin-bottom: 45px;
+}
 .right-container h1 {
     font-weight: 700;
     font-size: 48px;
